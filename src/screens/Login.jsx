@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
-const Home = () => {
+const Login = () => {
     return (
         <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../assets/figma.png')}>
             <View style={styles.main}>
@@ -19,7 +19,7 @@ const Home = () => {
                 </View>
                 <View style={styles.google}>
                     <View style={styles.googleImg}>
-                    <Image style={styles.imgGoogle} source={require('../assets/login.png')} />
+                        <Image style={styles.imgGoogle} source={require('../assets/login.png')} />
                     </View>
                     <Text style={{ color: 'white', fontSize: 15 }}>
                         Connect with google
@@ -45,4 +45,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Login

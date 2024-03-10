@@ -5,7 +5,9 @@
  */
 
 import React from 'react';
-import Home from './src/screens/home';
+import Register from './src/screens/register';
+import Login from './src/screens/Login';
+import SplashScreen from './src/screens/Splash/Splash';
 
 
 
@@ -15,7 +17,9 @@ function App() {
 
   return (
     <>
-      <Home></Home>
+      <Login></Login>
+      {/* <Register></Register> */}
+      {/* <SplashScreen/> */}
     </>
   );
 }
