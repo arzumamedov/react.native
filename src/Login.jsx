@@ -3,12 +3,12 @@ import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 
 import { styles } from './style'
 const Login = () => {
     return (
-        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../assets/figma.png')}>
+        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../src/assets/figma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
                     <View style={styles.navLeft}>
                         <View style={styles.img}>
-                            <Image style={styles.imgNav} source={require('../assets/figma.png')} />
+                            <Image style={styles.imgNav} source={require('../src/assets/figma.png')} />
                         </View>
                         <Text style={{ fontSize: 20, fontWeight: 700, marginTop: 10, color: 'black' }}>CampGlobe</Text>
                     </View>
@@ -19,7 +19,7 @@ const Login = () => {
                 </View>
                 <View style={styles.google}>
                     <View style={styles.googleImg}>
-                        <Image style={styles.imgGoogle} source={require('../assets/login.png')} />
+                        <Image style={styles.imgGoogle} source={require('../src/assets/login.png')} />
                     </View>
                     <Text style={{ color: 'white', fontSize: 15 }}>
                         Connect with google

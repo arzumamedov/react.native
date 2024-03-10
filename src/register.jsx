@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './rstyle'
-import Logo from '../assets/LogoFill.svg'
+import Logo from '../src/assets/LogoFill.svg'
 import CheckBox from '@react-native-community/checkbox'
 // import Icon from 'react-native-vector-icons/FontAwesome';
 const Register = () => {
@@ -12,7 +12,7 @@ const Register = () => {
     };
 
     return (
-        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../assets/figma.png')}>
+        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../src/assets/figma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
                     <View style={styles.navLeft}>
@@ -39,7 +39,7 @@ const Register = () => {
                 </TextInput>
                 <View style={styles.agree}>
                     {/* <Icon name="square-o" size={40} color="black" /> */}
-                    <CheckBox tintColors={{true:'#389C58',false:'#389C58'}} value={isChecked} onValueChange={handleCheckboxChange} />
+                    <CheckBox tintColors={{ true: '#389C58', false: '#389C58' }} value={isChecked} onValueChange={handleCheckboxChange} />
                     <Text style={{ color: 'white' }}>Agree with</Text>
                     <Text style={{ color: '#389C58' }}>Terms & Conditions</Text>
                 </View>
