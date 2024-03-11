@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
-import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import { styles } from './rstyle'
-import Logo from '../src/assets/LogoFill.svg'
+import { Image, ImageBackground, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
+import { styles } from './style'
+import Logo from '../../assets/LogoFill.svg'
 import CheckBox from '@react-native-community/checkbox'
+import { useNavigation } from '@react-navigation/native'
 // import Icon from 'react-native-vector-icons/FontAwesome';
 const Register = () => {
+    const navigation = useNavigation()
     const [isChecked, setChecked] = useState(false);
-
     const handleCheckboxChange = () => {
         setChecked(!isChecked);
     };
 
     return (
-        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../src/assets/figma.png')}>
+        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../../assets/figma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
                     <View style={styles.navLeft}>
@@ -49,7 +50,7 @@ const Register = () => {
                     </TouchableOpacity>
                     <View style={styles.already}>
                         <Text style={{ color: '#CED0D0' }}>Aready a member</Text>
-                        <Text style={{ color: 'green' }}>Login</Text>
+                        <TouchableHighlight underlayColor={"transparent"} onPress={()=>{navigation.navigate('Login')}}><Text style={{ color: 'green' }}>Login</Text></TouchableHighlight>
                     </View>
                 </View>
             </View>

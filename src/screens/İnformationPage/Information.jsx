@@ -1,14 +1,14 @@
 import React from 'react'
 import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import { styles } from './mstyle'
-const Main = () => {
+import { styles } from './style'
+const Information = () => {
     return (
-        <ImageBackground style={styles.image} resizeMode="cover" source={require('../src/assets/figma.png')}>
+        <ImageBackground style={styles.image} resizeMode="cover" source={require('../../assetsfigma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
                     <View style={styles.navLeft}>
                         <View style={styles.img}>
-                            <Image style={styles.imgNav} source={require('../src/assets/figma.png')} />
+                            <Image style={styles.imgNav} source={require('../../assetsfigma.png')} />
                         </View>
                         <Text style={{ fontSize: 20, fontWeight: 700, marginTop: 10, color: 'black' }}>CampGlobe</Text>
                     </View>
@@ -26,11 +26,10 @@ const Main = () => {
                 <View style={styles.loginRegister}>
                     <Text style={styles.loginText}>Log in</Text>
                     <Text style={styles.registerText}>Register</Text>
-
                 </View>
             </View>
         </ImageBackground>
     )
 }
 
-export default Main
+export default Information

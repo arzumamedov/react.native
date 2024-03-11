@@ -1,14 +1,14 @@
 import React from 'react'
-import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
 const Login = () => {
     return (
-        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../src/assets/figma.png')}>
+        <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../../assets/figma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
                     <View style={styles.navLeft}>
                         <View style={styles.img}>
-                            <Image style={styles.imgNav} source={require('../src/assets/figma.png')} />
+                            <Image style={styles.imgNav} source={require('../../assets/figma.png')} />
                         </View>
                         <Text style={{ fontSize: 20, fontWeight: 700, marginTop: 10, color: 'black' }}>CampGlobe</Text>
                     </View>
@@ -19,7 +19,7 @@ const Login = () => {
                 </View>
                 <View style={styles.google}>
                     <View style={styles.googleImg}>
-                        <Image style={styles.imgGoogle} source={require('../src/assets/login.png')} />
+                        <Image style={styles.imgGoogle} source={require('../../assets/login.png')} />
                     </View>
                     <Text style={{ color: 'white', fontSize: 15 }}>
                         Connect with google
@@ -37,9 +37,9 @@ const Login = () => {
                 <TextInput placeholder='E-mail' placeholderTextColor="#D8DADA" style={styles.input}></TextInput>
                 <TextInput placeholder='Password' placeholderTextColor="#D8DADA" style={styles.input}>
                 </TextInput>
-                <TouchableOpacity style={styles.button}>
+                <TouchableHighlight underlayColor={'#ff0000'} style={styles.button}>
                     <Text style={{ textAlign: 'center', color: 'white', fontSize: 20 }}>Log in</Text>
-                </TouchableOpacity>
+                </TouchableHighlight>
             </View>
         </ImageBackground>
     )
