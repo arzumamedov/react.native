@@ -4,11 +4,12 @@ import { styles } from './style'
 import Logo from '../../assets/LogoFill.svg'
 import Search from '../../assets/Search.svg'
 import Filter from '../../assets/Filter.svg'
-import Card from '../../components/Home/Card/Card'
+import TourCard from '../../components/Home/TourCard/TourCard'
+// import Card from '../../components/Home/Card'
 
 
 
-const Camp = () => {
+const Tour = () => {
     return (
         <View style={styles.main}>
             <View style={styles.navbar}>
@@ -28,10 +29,12 @@ const Camp = () => {
                 <Text style={styles.daily}>Daily tours</Text>
             </View>
             <Text style={styles.weekend}>Weekend camp place</Text>
-            <Card/>
+            {/* <Card/> */}
+            <TourCard/>
+
         </View>
 
     )
 }
 
-export default Camp
+export default Tour
