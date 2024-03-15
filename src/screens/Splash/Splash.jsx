@@ -4,18 +4,19 @@ import * as Animatable from 'react-native-animatable';
 import Logo from '../../assets/Logo.svg';
 import {styles} from "./styles.jsx"
 import LinearGradient from 'react-native-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
 // import { useNavigation } from '@react-navigation/native';
 const SplashScreen = () => {
   const circleRef = useRef(null);
-//   const navigation = useNavigation();
+  const navigation = useNavigation();
 
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       navigation.navigate('Start'); // Burada 'AnaSayfa' yerine gitmek istediğiniz ekranın adını yazmalısınız
-//     }, 5000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.navigate('Info'); // Burada 'AnaSayfa' yerine gitmek istediğiniz ekranın adını yazmalısınız
+    }, 5000);
 
-//     return () => cc:\Users\Memme\Downloads\Logo.svglearTimeout(timer);
-//   }, [navigation]);
+    // return () => cc:\Users\Memme\Downloads\Logo.svglearTimeout(timer);
+  }, [navigation]);
 
   return (
     <View style={styles.container}>

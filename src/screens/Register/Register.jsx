@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Image, ImageBackground, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, KeyboardAvoidingView, ScrollView, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
 import Logo from '../../assets/LogoFill.svg'
 import CheckBox from '@react-native-community/checkbox'
@@ -13,6 +13,7 @@ const Register = () => {
     };
 
     return (
+
         <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../../assets/figma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
@@ -50,7 +51,7 @@ const Register = () => {
                     </TouchableOpacity>
                     <View style={styles.already}>
                         <Text style={{ color: '#CED0D0' }}>Aready a member</Text>
-                        <TouchableHighlight underlayColor={"transparent"} onPress={()=>{navigation.navigate('Login')}}><Text style={{ color: 'green' }}>Login</Text></TouchableHighlight>
+                        <TouchableHighlight underlayColor={"transparent"} onPress={() => { navigation.navigate('Login') }}><Text style={{ color: 'green' }}>Login</Text></TouchableHighlight>
                     </View>
                 </View>
             </View>

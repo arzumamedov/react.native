@@ -1,14 +1,26 @@
 import React from 'react'
-import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
-const Information = () => {
+import { useNavigation } from '@react-navigation/native'
+const Info = () => {
+    const navigation = useNavigation()
+
+    const handleLogin = () => {
+        navigation.navigate('Login')
+    }
+
+    const handleRegister = () => {
+        navigation.navigate('Register')
+    }
+
+
     return (
-        <ImageBackground style={styles.image} resizeMode="cover" source={require('../../assetsfigma.png')}>
+        <ImageBackground style={styles.image} resizeMode="cover" source={require('../../assets/figma.png')}>
             <View style={styles.main}>
                 <View style={styles.navbar}>
                     <View style={styles.navLeft}>
                         <View style={styles.img}>
-                            <Image style={styles.imgNav} source={require('../../assetsfigma.png')} />
+                            <Image style={styles.imgNav} source={require('../../assets/figma.png')} />
                         </View>
                         <Text style={{ fontSize: 20, fontWeight: 700, marginTop: 10, color: 'black' }}>CampGlobe</Text>
                     </View>
@@ -24,12 +36,12 @@ const Information = () => {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.loginRegister}>
-                    <Text style={styles.loginText}>Log in</Text>
-                    <Text style={styles.registerText}>Register</Text>
+                    <TouchableHighlight onPress={handleLogin}><Text style={styles.loginText}>Log in</Text></TouchableHighlight>
+                    <TouchableHighlight onPress={handleRegister}><Text style={styles.registerText}>Register</Text></TouchableHighlight>
                 </View>
             </View>
         </ImageBackground>
     )
 }
 
-export default Information
+export default Info

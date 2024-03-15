@@ -1,7 +1,13 @@
 import React from 'react'
 import { Image, ImageBackground, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
+import { useNavigation } from '@react-navigation/native'
 const Login = () => {
+    const navigation = useNavigation()
+
+    const handleCliick = () => {
+        navigation.navigate('Camp')
+    }
     return (
         <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../../assets/figma.png')}>
             <View style={styles.main}>
@@ -19,7 +25,7 @@ const Login = () => {
                 </View>
                 <View style={styles.google}>
                     <View style={styles.googleImg}>
-                        <Image style={styles.imgGoogle} source={require('../../assets/login.png')} />
+                        {/* <Image style={styles.imgGoogle} source={require('../../assets/login.png')} /> */}
                     </View>
                     <Text style={{ color: 'white', fontSize: 15 }}>
                         Connect with google
@@ -37,7 +43,7 @@ const Login = () => {
                 <TextInput placeholder='E-mail' placeholderTextColor="#D8DADA" style={styles.input}></TextInput>
                 <TextInput placeholder='Password' placeholderTextColor="#D8DADA" style={styles.input}>
                 </TextInput>
-                <TouchableHighlight underlayColor={'#ff0000'} style={styles.button}>
+                <TouchableHighlight underlayColor={'#ff0000'} style={styles.button} onPress={handleCliick}>
                     <Text style={{ textAlign: 'center', color: 'white', fontSize: 20 }}>Log in</Text>
                 </TouchableHighlight>
             </View>
