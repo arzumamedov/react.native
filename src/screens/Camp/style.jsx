@@ -57,11 +57,15 @@ export const styles = StyleSheet.create({
     category: {
         width: '100%',
         height: 40,
-        backgroundColor: '#fff',
+        // backgroundColor: 'yellow',
         flexDirection: 'row',
         alignItems: 'center',
         gap: 20,
-        paddingLeft: 20
+        paddingLeft: 20,
+        borderTopWidth:2,
+        borderBottomWidth:2,
+        borderBlockColor:'#EBEBEB'
+
     },
     camp: {
         color: 'black',

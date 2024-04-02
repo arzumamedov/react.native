@@ -43,35 +43,29 @@ const FilterScreen = () => {
                 </View>
             </View>
             <View style={styles.filters}>
-                <View style={{ alignItems: 'center', gap: 20 }}>
-                    <Tent />
-                    <Fishing />
-                    <Toilet />
-                    <Wooden />
-                </View>
-                <View style={{ alignItems: 'center', gap: 20 }}>
-                    <Connection />
-                    <Snacks />
-                    <Trekking />
-                    <WildAnimals />
-                </View>
-                <View style={{ alignItems: 'center', gap: 20 }}>
-                    <Fire />
-                    <River />
-                    <SoftWater />
-                </View>
+                <Tent />
+                <Connection />
+                <Fire />
+                <Fishing />
+                <Snacks />
+                <River />
+                <Toilet />
+                <Trekking />
+                <SoftWater />
+                <Wooden />
+                <WildAnimals />
             </View>
-                <TouchableHighlight style={styles.button}>
-                    <Text style={{ color: 'white', fontFamily: 'Lato-Regular', fontSize: 16 }}>
-                        List posts
-                    </Text>
-                </TouchableHighlight>
-                <View style={styles.navBottomBar}>
-                    <Home />
-                    <Saved />
-                    <MyCamps />
-                    <Profile />
-                </View>
+            <TouchableHighlight style={styles.button}>
+                <Text style={{ color: 'white', fontFamily: 'Lato-Regular', fontSize: 16 }}>
+                    List posts
+                </Text>
+            </TouchableHighlight>
+            <View style={styles.navBottomBar}>
+                <Home />
+                <Saved />
+                <MyCamps />
+                <Profile />
+            </View>
 
         </View>
 

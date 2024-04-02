@@ -20,7 +20,7 @@ const Register = () => {
                     <View style={styles.navLeft}>
                         <Logo />
                         {/* <Image style={styles.imgNav} source={require('../assets/figma.png')} /> */}
-                        <Text style={[styles.navText, { fontSize: 20, marginTop: 10, color: 'black' }]}>CampGlobe</Text>
+                        <Text style={[styles.navText, { fontSize: 20, marginTop: 10, color: 'black',fontFamily:'Lato-Regular' }]}>CampGlobe</Text>
                     </View>
                     <Text style={[styles.navRightText, { fontSize: 16, marginTop: 15, color: 'black' }]}>Camping</Text>
                 </View>

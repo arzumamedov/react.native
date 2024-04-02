@@ -45,7 +45,6 @@ export const styles = StyleSheet.create({
     },
     navText: {
         fontFamily: 'Lato-Regular',
-        color:'white'
     },
     navRightText:{
         fontFamily: 'Lato-Light',

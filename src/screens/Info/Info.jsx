@@ -22,9 +22,9 @@ const Info = () => {
                         <View style={styles.img}>
                             <Image style={styles.imgNav} source={require('../../assets/figma.png')} />
                         </View>
-                        <Text style={{ fontSize: 20, fontWeight: 700, marginTop: 10, color: 'black' }}>CampGlobe</Text>
+                        <Text style={{ fontSize: 20, marginTop: 10, color: 'black', fontFamily: 'Lato-Regular' }}>CampGlobe</Text>
                     </View>
-                    <Text style={{ fontSize: 16, marginTop: 15, color: 'black' }}>Camping</Text>
+                    <Text style={{ fontSize: 16, marginTop: 15, color: 'black', fontFamily: 'Lato-Regular' }}>Camping</Text>
                 </View>
                 <View style={styles.text}>
                     <Text style={styles.mainTextFirts}>Find your dream</Text>

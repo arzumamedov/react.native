@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: '#F7F7F7',
-        // alignItems: 'center',
+        alignItems: 'center',
         position: 'relative',
 
 
@@ -43,17 +43,19 @@ export const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     filters: {
-        width: '100%',
+        width: '75%',
         flexDirection: 'row',
-        // backgroundColor:'blue',
-        justifyContent: 'space-around',
-        marginTop: 20
+        flexWrap:'wrap',
+        backgroundColor:'blue',
+        paddingHorizontal:20,
+        marginTop: 20,
+        gap:30
     },
     footer: {
         width: '100%',
-        backgroundColor: 'yellow',
+        // backgroundColor: 'yellow',
         height: 120,
-        position: 'absolute',
+        // position: 'absolute',
         bottom: 0,
         alignItems:'center',
         position:'relative'

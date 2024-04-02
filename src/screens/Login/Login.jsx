@@ -2,11 +2,16 @@ import React from 'react'
 import { Image, ImageBackground, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
 import { useNavigation } from '@react-navigation/native'
+import Google from '../../assets/Google.svg';
+
+
+
 const Login = () => {
+
     const navigation = useNavigation()
 
     const handleCliick = () => {
-        navigation.navigate('Camp')
+        navigation.navigate('Tabs')
     }
     return (
         <ImageBackground style={styles.image} blurRadius={16} resizeMode="cover" source={require('../../assets/figma.png')}>
@@ -16,17 +21,15 @@ const Login = () => {
                         <View style={styles.img}>
                             <Image style={styles.imgNav} source={require('../../assets/figma.png')} />
                         </View>
-                        <Text style={{ fontSize: 20, fontWeight: 700, marginTop: 10, color: 'black' }}>CampGlobe</Text>
+                        <Text style={{ fontSize: 20, marginTop: 10, color: 'black', fontFamily: 'Lato-Bold' }}>CampGlobe</Text>
                     </View>
-                    <Text style={{ fontSize: 16, marginTop: 15, color: 'black' }}>Camping</Text>
+                    <Text style={{ fontSize: 16, marginTop: 15, color: 'black', fontFamily: 'Lato-Regular' }}>Camping</Text>
                 </View>
                 <View style={styles.login}>
                     <Text style={{ fontSize: 27, textAlign: 'center', color: 'black' }}>Log in</Text>
                 </View>
                 <View style={styles.google}>
-                    <View style={styles.googleImg}>
-                        {/* <Image style={styles.imgGoogle} source={require('../../assets/login.png')} /> */}
-                    </View>
+                    <Google />
                     <Text style={{ color: 'white', fontSize: 15 }}>
                         Connect with google
                     </Text>
